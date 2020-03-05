@@ -1,1 +1,2 @@
+64bb795d-7f9d-4451-a311-002d666c9e05 bucket=applica-public datacenter=US encryption=none fileprefix=kleister-charity-git-annex/ host=s3.amazonaws.com name=pub-aws-s3 port=80 public=yes storageclass=STANDARD type=S3 timestamp=1583407736.836852s
 c81477de-c4a0-4dc9-bec8-8680a91497ff encryption=none name=shared-storage type=directory timestamp=1583407361.042963s
