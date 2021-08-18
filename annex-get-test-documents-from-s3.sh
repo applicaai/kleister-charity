@@ -9,8 +9,9 @@ else
 fi
 
 # git-annex itself
-git config remote.origin.annex-ignore true # to avoid message about the remote not handling git-annex
-git fetch -f origin git-annex:git-annex
+git remote add pdf-source https://github.com/applicaai/kleister-charity
+git config remote.pdf-source.annex-ignore true # to avoid message about the remote not handling git-annex
+git fetch -f pdf-source git-annex:git-annex
 git annex enableremote pub-aws-s3
 
 xzcat dev-0/in.tsv.xz test-A/in.tsv.xz | cut -f 1 | while read document_name
